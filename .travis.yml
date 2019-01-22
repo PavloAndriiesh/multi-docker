@@ -20,7 +20,7 @@ after_success:
     - docker push pavloandriiesh/multi-nginx
 
 deploy:
-    provide: elasticbeanstalk
+    provider: elasticbeanstalk
     region: "eu-west-1"
     app: "multi-docker"
     env: "MultiDocker-env"
